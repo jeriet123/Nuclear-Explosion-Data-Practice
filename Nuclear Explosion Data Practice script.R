@@ -1,4 +1,4 @@
-## Loads the Nuclear Explosion dataset from gethub
+## Loads the Nuclear Explosion dataset from github
 nuclear_explosions <- readr::read_csv("https://raw.githubusercontent.com/rfordatascience/
                                       tidytuesday/master/data/2019/2019-08-20/
                                       nuclear_explosions.csv")
@@ -12,3 +12,4 @@ library(stringr)
 ## Converts the data in the variable date_long into POSIXT via the format year, month,
 ## and day
 nuclear_explosions$date_long <- ymd(nuclear_explosions$date_long)
+variable.names(nuclear_explosions)
